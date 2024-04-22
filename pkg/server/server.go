@@ -30,7 +30,6 @@ func New(db Database, maxLength int, r *prometheus.Registry, forceOneTimeSecrets
 	if logger == nil {
 		logger = zap.NewNop()
 	}
-	console.log(db);
 	return Server{
 		db:                  db,
 		maxLength:           maxLength,
